@@ -1,7 +1,7 @@
 const clockContainer = document.querySelector(".js-clock"),
   clockTitle = clockContainer.querySelector("h1");
 
-seconds = 720*3600;
+const seconds = 720*3600;
 function getTime() {
   
 
