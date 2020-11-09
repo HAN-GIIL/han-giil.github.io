@@ -1,0 +1,96 @@
+body {
+  background-color: gray;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 170px;
+  color: white;
+  transition: color 0.5s ease-in-out;
+  margin: 0;
+  margin-top: 120px;
+}
+
+.clicked {
+  color: white;
+}
+.greetings {
+  margin: 0;
+  font-size: 50px;
+  color: white;
+}
+.btn {
+  cursor: pointer;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+.form input,
+.js-toDoForm input {
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  margin-top: 60px;
+  width: 650px;
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-bottom: 3px solid white;
+  margin-bottom: 20px;
+}
+
+::placeholder {
+  color: white;
+}
+
+.form input:focus,
+.js-toDoForm input:focus {
+  outline: none;
+}
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.3s linear;
+}
+
+button {
+  background-color: transparent;
+  color: tomato;
+  border: none;
+  font-size: 30px;
+  margin-left: 12px;
+}
+
+span {
+  font-size: 35px;
+}
+
+.js-weather {
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
